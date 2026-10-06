@@ -10,10 +10,10 @@ Además, facilita evaluar el impacto de las mejoras mediante indicadores como el
 
 Los siguientes departamentos y problemas son propuestas a validar con el briefing completo de la empresa, no incidencias confirmadas.
 
-| Departamento propuesto | Problema sencillo | Solución propuesta |
-| --- | --- | --- |
-| Atención al cliente | Consultar manualmente el estado de un envío para responder preguntas repetitivas. | Centralizar la consulta por identificador de envío y generar una respuesta con su estado actualizado. |
-| Operaciones logísticas | Revisar uno a uno los envíos para detectar entregas fuera del plazo previsto. | Filtrar automáticamente los envíos pendientes cuya hora prevista de entrega ya haya pasado y avisar al responsable. |
+| Departamento propuesto | Problema sencillo                                                                 | Solución propuesta                                                                                                  |
+| ---------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Atención al cliente    | Consultar manualmente el estado de un envío para responder preguntas repetitivas. | Centralizar la consulta por identificador de envío y generar una respuesta con su estado actualizado.               |
+| Operaciones logísticas | Revisar uno a uno los envíos para detectar entregas fuera del plazo previsto.     | Filtrar automáticamente los envíos pendientes cuya hora prevista de entrega ya haya pasado y avisar al responsable. |
 
 ## Reto de automatización
 
@@ -24,3 +24,10 @@ Los siguientes departamentos y problemas son propuestas a validar con el briefin
 - **Control:** registrar la alerta para evitar avisos duplicados del mismo retraso y dejar las decisiones de intervención al equipo humano.
 - **Resultado esperado:** reducir las revisiones manuales y el tiempo entre la detección de un retraso y su comunicación.
 - **Comprobación:** con datos de prueba, un envío pendiente fuera de plazo debe generar una única alerta; uno entregado o todavía dentro de plazo no debe generarla.
+
+## Mi idea de agente de IA
+
+- **Qué haría:** revisaría los envíos, detectaría con reglas cuáles están fuera de plazo y explicaría su situación en lenguaje sencillo, sin inventar causas y dejando las decisiones al equipo humano.
+- **Qué información necesitaría:** identificador del envío, transportista, estado actualizado, fecha y hora previstas de entrega y responsable al que avisar.
+- **Qué produciría:** una alerta con los datos del paquete retrasado y un resumen de su situación, además de un registro del aviso para evitar alertas duplicadas.
+
